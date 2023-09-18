@@ -20,6 +20,9 @@ public class Member {
     @Embedded
     private Password password;
 
+    @Embedded
+    private UserName userName;
+
 
 
 }
