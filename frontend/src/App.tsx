@@ -58,4 +58,6 @@ function DetailModal() {
 
 }
 
+// const DetailModal = () => {}
+
 export default App;
