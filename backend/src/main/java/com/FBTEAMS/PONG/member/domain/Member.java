@@ -23,6 +23,12 @@ public class Member {
     @Embedded
     private UserName userName;
 
+    public Member(UserId userId, Password password, UserName userName) {
+        this.userId = userId;
+        this.password = password;
+        this.userName = userName;
+    }
+
 
 
 }

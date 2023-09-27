@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
@@ -59,5 +58,6 @@ function DetailModal() {
 }
 
 // const DetailModal = () => {}
+// URL이 바뀔 때 마다 보여줄 컴포넌트를 맵핑하고 그 컴포넌트를 랜더링하는 과정을 라우팅이라고 한다.
 
 export default App;
