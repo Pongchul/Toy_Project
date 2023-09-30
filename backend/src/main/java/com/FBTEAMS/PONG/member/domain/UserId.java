@@ -4,8 +4,10 @@ import com.FBTEAMS.PONG.member.exception.MemberErrorCode;
 import com.FBTEAMS.PONG.member.exception.MemberException;
 import jakarta.persistence.Column;
 import jakarta.persistence.Embeddable;
+import lombok.Getter;
 import lombok.NoArgsConstructor;
 
+@Getter
 @Embeddable
 @NoArgsConstructor
 public class UserId {
@@ -24,7 +26,8 @@ public class UserId {
         this.value = value;
     }
 
-    public UserId from(String value) {
+    // Method from -> 매개변수를 하나 받아서 해당 타입의 인스턴스를 빈환하는 형변환 메서드 (Effective Java)
+    public static UserId from(String value) {
         wrongUserIdFormat(value);
         validLengthInRange(value);
 

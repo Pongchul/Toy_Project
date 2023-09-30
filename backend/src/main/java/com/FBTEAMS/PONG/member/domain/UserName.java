@@ -3,10 +3,12 @@ package com.FBTEAMS.PONG.member.domain;
 import com.FBTEAMS.PONG.member.exception.MemberException;
 import jakarta.persistence.Column;
 import jakarta.persistence.Embeddable;
+import lombok.Getter;
 import lombok.NoArgsConstructor;
 
 import static com.FBTEAMS.PONG.member.exception.MemberErrorCode.*;
 
+@Getter
 @Embeddable
 @NoArgsConstructor
 public class UserName {

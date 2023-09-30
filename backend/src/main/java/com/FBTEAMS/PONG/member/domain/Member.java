@@ -31,21 +31,5 @@ public class Member {
         this.userName = userName;
     }
 
-    public String getUserId() {
-        return Optional.ofNullable(userId)
-                .map(UserId::getValue)
-                .orElse("");
-    }
 
-    public String getPassword() {
-        return Optional.ofNullable(password)
-                .map(Password::getValue)
-                .orElse("");
-    }
-
-    public String getUserName() {
-        return Optional.ofNullable(userName)
-                .map(UserName::getValue)
-                .orElse("");
-    }
 }
