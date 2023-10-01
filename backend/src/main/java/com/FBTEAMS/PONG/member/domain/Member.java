@@ -3,6 +3,7 @@ package com.FBTEAMS.PONG.member.domain;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
+import org.hibernate.annotations.Type;
 
 import java.util.Optional;
 
@@ -25,6 +26,7 @@ public class Member {
     @Embedded
     private UserName userName;
 
+
     public Member(UserId userId, Password password, UserName userName) {
         this.userId = userId;
         this.password = password;
@@ -32,4 +34,21 @@ public class Member {
     }
 
 
+    public String getUserId() {
+        return Optional.ofNullable(userId)
+                .map(UserId::getValue)
+                .orElse("");
+    }
+
+    public String getPassword() {
+        return Optional.ofNullable(password)
+                .map(Password::getValue)
+                .orElse("");
+    }
+
+    public String getUserName() {
+        return Optional.ofNullable(userName)
+                .map(UserName::getValue)
+                .orElse("");
+    }
 }
