@@ -33,6 +33,10 @@ public class Member {
         this.userName = userName;
     }
 
+    public boolean isSameUserId(Member member) {
+        return userId.getValue().equals(member.userId.getValue());
+    }
+
 
     public String getUserId() {
         return Optional.ofNullable(userId)
