@@ -26,6 +26,9 @@ public class Member {
     @Embedded
     private UserName userName;
 
+    @Column(nullable = false)
+    private boolean deleted;
+
 
     public Member(UserId userId, Password password, UserName userName) {
         this.userId = userId;
@@ -35,6 +38,13 @@ public class Member {
 
     public boolean isSameUserId(Member member) {
         return userId.getValue().equals(member.userId.getValue());
+    }
+
+    public void delete() {
+        userId = null;
+        password = null;
+        userName = null;
+        deleted = true;
     }
 
 
