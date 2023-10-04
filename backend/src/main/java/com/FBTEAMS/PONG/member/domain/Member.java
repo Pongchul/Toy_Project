@@ -4,6 +4,7 @@ import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import org.hibernate.annotations.Type;
+import org.springframework.security.crypto.password.PasswordEncoder;
 
 import java.util.Optional;
 
@@ -47,6 +48,9 @@ public class Member {
         deleted = true;
     }
 
+    public void changePassword(String password, PasswordEncoder encoder) {
+        this.password = this.password.update(password, encoder);
+    }
 
     public String getUserId() {
         return Optional.ofNullable(userId)

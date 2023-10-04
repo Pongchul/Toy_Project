@@ -27,5 +27,4 @@ public class MemberService {
         return savedMember.getId();
     }
 
-
 }
