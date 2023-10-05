@@ -52,6 +52,10 @@ public class Member {
         this.password = this.password.update(password, encoder);
     }
 
+    public void changeUserName(String userName) {
+        this.userName = this.userName.update(userName);
+    }
+
     public String getUserId() {
         return Optional.ofNullable(userId)
                 .map(UserId::getValue)
