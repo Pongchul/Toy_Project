@@ -28,6 +28,7 @@ public class Member {
     private UserName userName;
 
     @Column(nullable = false)
+    @Type()
     private boolean deleted;
 
 
