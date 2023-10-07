@@ -2,6 +2,8 @@ package com.FBTEAMS.PONG.member.service;
 
 import com.FBTEAMS.PONG.member.domain.*;
 import com.FBTEAMS.PONG.member.dto.request.SignupRequest;
+import com.FBTEAMS.PONG.member.exception.MemberErrorCode;
+import com.FBTEAMS.PONG.member.exception.MemberException;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
@@ -25,6 +27,13 @@ public class MemberService {
         Member savedMember = memberRepository.save(member);
 
         return savedMember.getId();
+    }
+
+    private void validateUserIdIsNotDuplicated(UserId userId) {
+        if (memberRepository.existsByUserId(userId)) {
+            // TODO : 에러 코드 추가 필요
+            throw new MemberException(MemberErrorCode.USERID_IS_NOT_WRONG_RANGE);
+        }
     }
 
 }
