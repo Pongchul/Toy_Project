@@ -1,12 +1,12 @@
-package com.FBTEAMS.PONG.member.domain;
+package com.FBTEAMS.backend.member.domain;
 
-import com.FBTEAMS.PONG.member.exception.MemberException;
+import com.FBTEAMS.backend.member.exception.MemberException;
 import jakarta.persistence.Column;
 import jakarta.persistence.Embeddable;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 
-import static com.FBTEAMS.PONG.member.exception.MemberErrorCode.*;
+import static com.FBTEAMS.backend.member.exception.MemberErrorCode.*;
 
 @Getter
 @Embeddable

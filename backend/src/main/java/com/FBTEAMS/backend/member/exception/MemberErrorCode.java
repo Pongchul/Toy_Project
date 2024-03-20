@@ -1,6 +1,6 @@
-package com.FBTEAMS.PONG.member.exception;
+package com.FBTEAMS.backend.member.exception;
 
-import com.FBTEAMS.PONG.global.exception.CustomErrorCode;
+import com.FBTEAMS.backend.global.exception.CustomErrorCode;
 
 public enum MemberErrorCode implements CustomErrorCode {
 

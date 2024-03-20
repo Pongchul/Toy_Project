@@ -1,4 +1,4 @@
-package com.FBTEAMS.PONG.member.domain;
+package com.FBTEAMS.backend.member.domain;
 
 import org.springframework.data.repository.Repository;
 

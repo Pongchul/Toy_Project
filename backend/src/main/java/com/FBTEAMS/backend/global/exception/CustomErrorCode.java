@@ -1,4 +1,4 @@
-package com.FBTEAMS.PONG.global.exception;
+package com.FBTEAMS.backend.global.exception;
 
 public interface CustomErrorCode {
 

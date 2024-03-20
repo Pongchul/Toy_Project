@@ -1,4 +1,4 @@
-package com.FBTEAMS.PONG.member.dto.request;
+package com.FBTEAMS.backend.member.dto.request;
 
 import jakarta.validation.constraints.NotNull;
 import lombok.AllArgsConstructor;

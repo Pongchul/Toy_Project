@@ -1,6 +1,6 @@
-package com.FBTEAMS.PONG.member.domain;
+package com.FBTEAMS.backend.member.domain;
 
-import com.FBTEAMS.PONG.member.exception.MemberException;
+import com.FBTEAMS.backend.member.exception.MemberException;
 import jakarta.persistence.Column;
 import jakarta.persistence.Embeddable;
 import lombok.Getter;
@@ -9,7 +9,7 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 
 import java.util.regex.Pattern;
 
-import static com.FBTEAMS.PONG.member.exception.MemberErrorCode.*;
+import static com.FBTEAMS.backend.member.exception.MemberErrorCode.*;
 
 @Embeddable
 @NoArgsConstructor

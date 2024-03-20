@@ -1,7 +1,7 @@
-package com.FBTEAMS.PONG.member.domain;
+package com.FBTEAMS.backend.member.domain;
 
-import com.FBTEAMS.PONG.member.exception.MemberErrorCode;
-import com.FBTEAMS.PONG.member.exception.MemberException;
+import com.FBTEAMS.backend.member.exception.MemberErrorCode;
+import com.FBTEAMS.backend.member.exception.MemberException;
 import jakarta.persistence.Column;
 import jakarta.persistence.Embeddable;
 import lombok.Getter;

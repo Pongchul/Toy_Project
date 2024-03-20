@@ -1,9 +1,8 @@
-package com.FBTEAMS.PONG.member.domain;
+package com.FBTEAMS.backend.member.domain;
 
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
-import org.hibernate.annotations.Type;
 import org.springframework.security.crypto.password.PasswordEncoder;
 
 import java.util.Optional;

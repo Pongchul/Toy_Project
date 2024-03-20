@@ -1,10 +1,10 @@
-package com.FBTEAMS.PONG;
+package com.FBTEAMS.backend;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class PongApplicationTests {
+class FBApplicationTests {
 
 	@Test
 	void contextLoads() {

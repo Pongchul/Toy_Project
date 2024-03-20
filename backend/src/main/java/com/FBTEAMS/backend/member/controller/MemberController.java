@@ -1,7 +1,7 @@
-package com.FBTEAMS.PONG.member.controller;
+package com.FBTEAMS.backend.member.controller;
 
-import com.FBTEAMS.PONG.member.dto.request.SignupRequest;
-import com.FBTEAMS.PONG.member.service.MemberService;
+import com.FBTEAMS.backend.member.dto.request.SignupRequest;
+import com.FBTEAMS.backend.member.service.MemberService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

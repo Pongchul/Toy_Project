@@ -1,9 +1,9 @@
-package com.FBTEAMS.PONG.member.service;
+package com.FBTEAMS.backend.member.service;
 
-import com.FBTEAMS.PONG.member.domain.*;
-import com.FBTEAMS.PONG.member.dto.request.SignupRequest;
-import com.FBTEAMS.PONG.member.exception.MemberErrorCode;
-import com.FBTEAMS.PONG.member.exception.MemberException;
+import com.FBTEAMS.backend.member.domain.*;
+import com.FBTEAMS.backend.member.dto.request.SignupRequest;
+import com.FBTEAMS.backend.member.exception.MemberErrorCode;
+import com.FBTEAMS.backend.member.exception.MemberException;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
